@@ -1,0 +1,15 @@
+<h3>Liste des collaborateurs</h3>
+
+    <table class="table table-striped">
+        <tr>
+            <th>Matricule</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+        </tr>
+        <tr ng-repeat="collaborateur in $ctrl.collaborateurs track by $index">
+            <td> {{ collaborateur.matricule }}</td>
+            <td> {{ collaborateur.nom }}</td>
+            <td> {{ collaborateur.prenom }}</td>
+        </tr>
+    </table>
+
